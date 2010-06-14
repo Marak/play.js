@@ -1,4 +1,4 @@
-## play.js - play sound files from node.js, simple as cake and kid approved!
+## play.js - play sound files from node.js to your speaks, simple as cake and kid approved!
 <img src = "http://i.imgur.com/FLLGe.png" border = "0"/>
 <img src = "http://imgur.com/KRkGO.png" border = "0"/>
 

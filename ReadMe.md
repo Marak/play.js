@@ -6,9 +6,11 @@
 
           var play = require('./lib/play');
 
-          play.sound('./wavs/kick.wav');
-          play.sound('./wavs/tick.wav');
-          play.sound('./wavs/snare.wav');
+          play.sound('./wavs/intro.wav');
+          play.sound('./wavs/alarm.wav');
+          play.sound('./wavs/crinkle.wav');
+          play.sound('./wavs/flush.wav');
+          play.sound('./wavs/ding.wav');
 
           // drum party, now go JSONloop => http://github.com/marak/JSONloops
 

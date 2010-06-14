@@ -12,7 +12,7 @@
           play.sound('./wavs/flush.wav');
           play.sound('./wavs/ding.wav');
 
-          // drum party, now go JSONloop => http://github.com/marak/JSONloops
+          // drum party, now go to JSONloop => http://github.com/marak/JSONloops
 
 ### fun facts
 

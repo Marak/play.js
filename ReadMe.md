@@ -16,9 +16,9 @@
 
 ### fun facts
 
-play.speak() calls are async ^_^ ahahaha, but where are the callbacks? fork and have fun!
+play.sound() calls are async ^_^ ahahaha, but where are the callbacks? fork and have fun!
 
 ### Requirements
 
-Mac OS
+Mac OS and node.js
 

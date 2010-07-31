@@ -1,14 +1,17 @@
 {
     "name": "play",
     "description": "play sound files from node.js to your speakers, simple as cake and kid approved!",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "author": "Marak Squires",
     "repository": {
-        "type": "git",
+        "type": "git", 
         "url": "http://github.com/Marak/play.js.git" 
     },
+    "dependencies": {
+       "colors": ">= 0.3.0"     
+     },    
     "engine": [
         "node >=0.1.90" 
     ],
-    "main": "play" 
+    "main": "lib/play" 
 }

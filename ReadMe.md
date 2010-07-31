@@ -23,6 +23,7 @@
         play.sound('./wavs/sfx/crinkle.wav');
         play.sound('./wavs/sfx/flush.wav');
         play.sound('./wavs/sfx/ding.wav');
+        
       });
 
 ###drum party, now go to JSONloops => <a href = "http://github.com/marak/JSONloops">http://github.com/marak/JSONloops</a>

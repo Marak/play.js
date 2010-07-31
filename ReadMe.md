@@ -2,6 +2,15 @@
 <img src = "http://i.imgur.com/FLLGe.png" border = "0"/>
 <img src = "http://imgur.com/KRkGO.png" border = "0"/>
 
+### Installing npm (node package manager)
+
+     curl http://npmjs.org/install.sh | sh
+
+### Installing play.js
+
+     npm install play
+
+
 # usage
 
       var play = require('play');

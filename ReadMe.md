@@ -27,8 +27,8 @@
 
 ## DEMO
 
-  cd examples
-  node demo.js
+     cd examples
+     node demo.js
 
 ###drum party, now go to JSONloops => <a href = "http://github.com/marak/JSONloops">http://github.com/marak/JSONloops</a>
 

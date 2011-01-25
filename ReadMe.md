@@ -1,6 +1,6 @@
 ## play.js - play sound files from node.js to your speakers, simple as cake and kid approved!
-<img src = "http://i.imgur.com/FLLGe.png" border = "0"/>
-<img src = "http://imgur.com/KRkGO.png" border = "0"/>
+<img src = "https://github.com/Marak/play.js/raw/master/logo.png" border = "0"/>
+<img src = "https://github.com/Marak/play.js/raw/master/demo.png" border = "0"/>
 
 ### Installing npm (node package manager)
 
@@ -10,8 +10,7 @@
 
      npm install play
 
-
-# usage
+# USAGE
 
       var play = require('play');
 
@@ -25,6 +24,11 @@
         play.sound('./wavs/sfx/ding.wav');
         
       });
+
+## DEMO
+
+  cd examples
+  node demo.js
 
 ###drum party, now go to JSONloops => <a href = "http://github.com/marak/JSONloops">http://github.com/marak/JSONloops</a>
 

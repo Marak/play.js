@@ -1,4 +1,4 @@
-var play = require('../lib/play');
+var play = require('../lib/play').Play();
 
 // play with a callback
 play.sound('../wavs/sfx/intro.wav', function(){

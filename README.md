@@ -12,7 +12,7 @@
 
 # USAGE
 
-      var play = require('play');
+      var play = require('play').Play();
 
       // play with a callback
       play.sound('./wavs/sfx/intro.wav', function(){
@@ -25,15 +25,57 @@
         
       });
 
-## DEMO
+      // Set a custom player (see Requirements)
+      play.usePlayer('play');
+      play.sound('./wavs/sfx/intro.wav');
+
+      //If you want to know when the player has defintely started playing
+      play.on('play', function (valid) {
+        console.log('I just started playing!');
+      }
+      play.sound('./wavs/sfx/ding.wav');
+
+## CLI DEMO
 
      cd examples
      node demo.js
+
+## Web DEMO
+
+  Recommended that you use play.min.js for web-based playbacks
+  assumes you have already embedded the audio file as an embed tag
+
+      <embed id = "hat" autostart = "false" src = "./wavs/drums/tick.wav"/>
+      <embed id = "snare" autostart = "false" src = "./wavs/drums/snare.wav"/>
+      <embed id = "kick" autostart = "false" src = "./wavs/drums/kick.wav"/>
+
+  see examples/index.html 
 
 ###drum party, now go to JSONloops => <a href = "http://github.com/marak/JSONloops">http://github.com/marak/JSONloops</a>
 
 ### Requirements
 
-Mac OS and node.js
+Node.js
 
-                        
+**One of the CLI based audio player**
+ - 'afplay'
+ - 'mplayer'
+ - 'mpg123'
+ - 'mpg321'
+ - 'play'
+ - (anyother cli based audio player)
+
+### Raw Handle to the player
+      // If you want raw access to the player (via stdin)
+
+      // require and stuff happened here
+      var play = require('play').Play();
+      var player = false;
+
+      play.usePlayer('a_player_you_know_howto_control');
+      play.on('play', function () {
+        player = play.player;
+      });
+
+      play.sound('./somelonglongsong.wav');
+

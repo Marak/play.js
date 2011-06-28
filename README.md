@@ -25,15 +25,16 @@
         
       });
 
-      // Set a custom player (see Requirements)
-      play.usePlayer('play');
-      play.sound('./wavs/sfx/intro.wav');
-
       //If you want to know when the player has defintely started playing
       play.on('play', function (valid) {
         console.log('I just started playing!');
-      }
+      });
       play.sound('./wavs/sfx/ding.wav');
+
+      //If you want to know if this can't play for some reason
+      play.on('error', function () {
+        console.log('I can't play!');
+      });
 
 ## CLI DEMO
 
@@ -65,17 +66,26 @@ Node.js
  - 'play'
  - (anyother cli based audio player)
 
-### Raw Handle to the player
+  If you know that a certain player will exist in the CLI
+  you can actually force it to use that specific player using
+  the usePlayer function (see below for specifics)
+
+### Raw Handle to the player and using usePlayer
+
       // If you want raw access to the player (via stdin)
 
       // require and stuff happened here
       var play = require('play').Play();
       var player = false;
 
-      play.usePlayer('a_player_you_know_howto_control');
+      // Force it to use mplayer (can be anything else)
+      play.usePlayer('mplayer');
       play.on('play', function () {
         player = play.player;
       });
 
       play.sound('./somelonglongsong.wav');
 
+#### Notes on using usePlayer
+  
+  The player better exist or all hell may break lose.

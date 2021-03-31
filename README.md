@@ -33,7 +33,7 @@
 
       //If you want to know if this can't play for some reason
       play.on('error', function () {
-        console.log('I can't play!');
+        console.log('I can\'t play!');
       });
 
 ## CLI DEMO
